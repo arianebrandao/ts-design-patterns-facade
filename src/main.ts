@@ -7,7 +7,7 @@ const ariane = new Jogador(
   "ariane@ghbranding.com.br",
 );
 
-Facade.JogadorFacade.removeConta(ariane);
+Facade.JogadorFacade.removerConta(ariane);
 //Facade.ClienteFacade.removeConta(fulano);
 //Facade.ClienteFacade.removeConta(ciclano);
 

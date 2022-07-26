@@ -1,6 +1,6 @@
 import { Jogador } from "../subsystem/jogador";
 
-export class JogadorService {
+export class JogadorDatabase {
   constructor(private jogador: Jogador) { }
 
   delete(): boolean {

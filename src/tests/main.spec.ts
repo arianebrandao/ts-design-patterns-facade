@@ -9,7 +9,7 @@ const ariane = new Jogador(
 );
 
 const logSpy = vi.spyOn(console, "log");
-console.log(Facade.JogadorFacade.removeConta(ariane));
+console.log(Facade.JogadorFacade.removerConta(ariane));
 
 describe("should delete player account and all data", () => {
   it("should remove avatar", () => {
