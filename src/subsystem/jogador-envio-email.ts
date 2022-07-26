@@ -1,6 +1,6 @@
-import { Jogador } from "../models/jogador";
+import { Jogador } from "../subsystem/jogador";
 
-export class JogadorEmail {
+export class JogadorEnvioEmail {
   constructor(private jogador: Jogador) {}
 
   envioRemocaoConta(): boolean {

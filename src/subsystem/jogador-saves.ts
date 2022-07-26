@@ -1,4 +1,4 @@
-import { Jogador } from "../models/jogador";
+import { Jogador } from "../subsystem/jogador";
 
 export class JogadorSaves {
   constructor(private jogador: Jogador) {}

@@ -1,9 +1,9 @@
-import { Jogador } from "../models/jogador";
-import { JogadorAvatar } from "../models/jogador-avatar";
-import { JogadorSaves } from "../models/jogador-saves";
-import { JogadorEmail } from "../models/jogador-email";
-import { JogadorHistoricoAcesso } from "../models/jogador-historico-acesso";
-import { JogadorService } from "../models/jogador-service";
+import { Jogador } from "../subsystem/jogador";
+import { JogadorAvatar } from "../subsystem/jogador-avatar";
+import { JogadorSaves } from "../subsystem/jogador-saves";
+import { JogadorEnvioEmail } from "../subsystem/jogador-envio-email";
+import { JogadorHistoricoAcesso } from "../subsystem/jogador-historico-acesso";
+import { JogadorService } from "../subsystem/jogador-service";
 
 export namespace Facade {
   export class JogadorFacade {
@@ -12,7 +12,7 @@ export namespace Facade {
       const jogadorSaves = new JogadorSaves(jogador);
       const jogadorHistoricoAcesso = new JogadorHistoricoAcesso(jogador);
       const jogadorService = new JogadorService(jogador); // banco de dados
-      const jogadorEmail = new JogadorEmail(jogador);
+      const jogadorEmail = new JogadorEnvioEmail(jogador);
 
       jogadorAvatar.remove();
       jogadorSaves.delete();

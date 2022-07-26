@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { Jogador } from "../models/jogador";
+import { Jogador } from "../subsystem/jogador";
 import { Facade } from "../facade/jogadorFacade";
 
 const ariane = new Jogador(

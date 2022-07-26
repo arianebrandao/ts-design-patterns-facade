@@ -1,4 +1,4 @@
-import { Jogador } from "./models/jogador";
+import { Jogador } from "./subsystem/jogador";
 import { Facade } from "./facade/jogadorFacade";
 
 const ariane = new Jogador(
@@ -7,7 +7,7 @@ const ariane = new Jogador(
   "ariane@ghbranding.com.br",
 );
 
-var removeOutput = Facade.JogadorFacade.removeConta(ariane);
+Facade.JogadorFacade.removeConta(ariane);
 //Facade.ClienteFacade.removeConta(fulano);
 //Facade.ClienteFacade.removeConta(ciclano);
 
