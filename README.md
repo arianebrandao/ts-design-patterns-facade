@@ -1,10 +1,11 @@
-## Exemplo do padrão de código Facade
+## Exemplo do padrão de projeto Facade
 
-Esse é um projeto para exemplificar o uso do padrão de projeto chamado Facade.
+Esse é um projeto para exemplificar o uso do padrão de projeto chamado 
+[Facade](https://refactoring.guru/design-patterns/facade).
 Criei para apresentar no projeto de Dojo que participo.
 
 Link para a apresentação do projeto:
-[https://whimsical.com/dojo-design-patterns-9wemkvGv94PdBtNvshDB9i]
+https://whimsical.com/dojo-design-patterns-9wemkvGv94PdBtNvshDB9i
 
 ## Tecnologias
 
