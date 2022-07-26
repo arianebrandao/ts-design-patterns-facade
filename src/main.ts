@@ -1,6 +1,16 @@
 import { Jogador } from "./models/jogador";
 import { Facade } from "./facade/jogadorFacade";
 
+const ariane = new Jogador(
+  "Ariane Brandão",
+  "arianebrandao",
+  "ariane@ghbranding.com.br",
+);
+
+var removeOutput = Facade.JogadorFacade.removeConta(ariane);
+//Facade.ClienteFacade.removeConta(fulano);
+//Facade.ClienteFacade.removeConta(ciclano);
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Facade Design Pattern</h1>
@@ -9,12 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
   </div>
 `
-const ariane = new Jogador(
-  "Ariane Brandão",
-  "arianebrandao",
-  "ariane@ghbranding.com.br",
-);
 
-Facade.JogadorFacade.removeConta(ariane);
-//Facade.ClienteFacade.removeConta(fulano);
-//Facade.ClienteFacade.removeConta(ciclano);
+
+
+
